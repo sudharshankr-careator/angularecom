@@ -11,11 +11,11 @@
 }
 
 .item {
-  margin: 0px 15px;
+  margin: 0px 1rem;
   text-align: center;
   img {
-    width: 64px;
-    height: 64px;
+    width: 8rem;
+    height: 8rem;
   }
   a:hover {
     color: blue;
@@ -23,7 +23,8 @@
 }
 
 .card {
-  margin: 0.4rem;
+  margin: 5rem;
+
   img {
     width: 20rem;
     height: 20rem;
