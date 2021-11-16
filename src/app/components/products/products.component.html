@@ -2,11 +2,71 @@
   <div class="container d-flex">
     <div class="item">
       <a>
-        <img src="" alt="No" />
+        <img
+          src="https://i.pinimg.com/originals/f7/f2/a2/f7f2a27aa9d45b73d6b52a40eabb50ae.png"
+          alt="Electroics"
+        />
+        <h6>Electonics</h6>
       </a>
     </div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
+    <div class="item">
+      <a>
+        <img
+          src="https://img.freepik.com/free-vector/promotion-fashion-banner_1188-161.jpg?size=626&ext=jpg"
+          alt="Fashion"
+        />
+        <h6>Fashion</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a>
+        <img
+          src="https://cdn.w600.comps.canstockphoto.com/pet-shop-banner-cat-and-dog-accessories-clip-art-vector_csp84014063.jpg"
+          alt="Product"
+        />
+        <h6>Products</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a>
+        <img
+          src="https://i.pinimg.com/originals/1e/5d/27/1e5d270c627074a21966cd113c3aa3d1.jpg"
+          alt="Jwellery"
+        />
+        <h6>Jewllery</h6>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of productList">
+      <div class="card col-md-3">
+        <img src="{{ item.image }}" alt="" />
+        <h5
+          style="
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100ch;
+          "
+        >
+          {{ item.title }}
+        </h5>
+        <p
+          style="
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100ch;
+          "
+        >
+          {{ item.description }}
+        </p>
+        <p><strong>Price:</strong>&#8377;{{ item.price }}</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </ng-container>
   </div>
 </div>
